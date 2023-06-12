@@ -1,4 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+:root{ 
+    --main-bg-color:#2874f0;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
+
+header{
+    background-color: var(--main-bg-color);
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul{
+    display: flex;
+    height: 60px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Lobster', cursive;
+}
+
+nav ul li a:hover{
+    /* color:#0c0e12; */
+    font-weight:bold;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    width: 500px;
+    height: 25px;
+    border-radius: 3px;
+    margin: 0 15px 0 112px;
+    padding: 0 12px;
+}
+
+.search button{
+    font-family: 'Lobster', cursive;
+    font-weight: 500;
+}
+
+.container{
+    min-height: calc(100vh - 60px - 12vh);
+}
+
+.slider{
+    width: 80vw;
+    margin:12px auto;
+}
+
+.card h2{
+    font-family: 'Caveat', cursive;
+}
+
+.card{
+    max-width: 90vw; 
+    margin: auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+    background: white;
+    margin:0 15px;
+}
+
+.card-item:hover{
+    transform: scale(1.05,1.05);
+    transition: .2s;
+}
+
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
